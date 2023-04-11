@@ -1,11 +1,11 @@
 <?php
 	$operando2='';
 	
-    if(isset($_GET['conta'])) 
+	if(isset($_GET['conta'])) 
 	{
-        $n0=$_GET['valor0'];
-        $n1=$_GET['valor1'];
-        $operando=$_GET['conta'];
+        	$n0=$_GET['valor0'];
+        	$n1=$_GET['valor1'];
+        	$operando=$_GET['conta'];
 
 		switch($operando) 
 		{
@@ -28,15 +28,15 @@
 					echo"<p>divisao por 0 = indefinido</p>";
 				}
 				break;
-        }
-    }
+		}
+	}
 	if(isset($_GET['conta2']))
 	{
 		$n2=$_GET['valor2'];
-        $operando2=$_GET['conta2'];
+        	$operando2=$_GET['conta2'];
 	
 		switch($operando2) 
-	{
+		{
 			case 'raiz':
 				$resultado2=sqrt($n2);
 				break;
@@ -48,7 +48,7 @@
 				$radiano=($n2*(M_PI))/180;
 				$resultado2=sin($radiano);
 				break;
-	}
+		}
 	}
 ?>
 
